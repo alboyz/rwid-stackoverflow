@@ -1,0 +1,7 @@
+@startuml
+agent user as u
+usecase "SoRwid" as p
+u -> p :question
+u <- p :answer
+u -> p :vote
+@enduml

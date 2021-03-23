@@ -1,0 +1,13 @@
+@startuml
+(*) --> "login"
+
+if "After login" then
+  -->[true] "Give Question"
+  --> "Write Question"
+  --> "Give  vote / feedback"
+  -right-> (*)
+else
+  ->[false] "Answer question"
+  -->[Ending process] (*)
+endif
+@enduml

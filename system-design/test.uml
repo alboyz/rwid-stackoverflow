@@ -1,0 +1,15 @@
+@startuml
+SourceTable1 -right-> TargetTable1
+             -right-> Table3
+Table4 -right-> Table2
+ 
+BCRS -right-> AccountName
+     -right-> AccountNumber
+ 
+Branch-right->AccountName
+ 
+ 
+SourceTable1 -down[hidden]-> Table4
+Table4 -down[hidden]-> BCRS
+BCRS -down[hidden]-> Branch
+@enduml
